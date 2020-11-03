@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="230.0">MyException</node>
+    <node x="181.0" y="230.0">Group</node>
+    <node x="149.0" y="0.0">StudentSurnameComparator</node>
+    <node x="0.0" y="155.0">StudentNameComparator</node>
+    <node x="0.0" y="80.0">Student</node>
+    <node x="4.0" y="0.0">Person</node>
+    <node x="0.0" y="305.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Student" target="Person">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="320.0" y="-24.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
