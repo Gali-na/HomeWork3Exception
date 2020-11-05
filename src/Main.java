@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Student student = new Student(18, "Ivan", "Zolotarev", "Krivoy Rog", "KTY", "Computer techologies", 0);
-        Student student2 = new Student(19, "Sergey", "Ivanov", "Krivoy Rog", "KTY", "Computer techologies", 700);
+        Student student2 = new Student(19, "Sergey", "Zolotarev", "Krivoy Rog", "KTY", "Computer techologies", 700);
         Student student3 = new Student(18, "Olga", "Prohorova", "Krivoy Rog", "KTY", "Computer techologies", 500);
         Student student4 = new Student(21, "Pavel", "Alrhin", "Krivoy Rog", "KTY", "Computer techologies", 0);
         Student student5 = new Student(25, "Eaterina", "Andreeva", "Krivoy Rog", "KTY", "Computer techologies", 700);
@@ -28,6 +28,14 @@ public class Main {
         }
         group.removeStudent(student10);
         System.out.println(group.toString());
-        group.searchStudent("A");
+        Student [] rezultSearchStudent = group.searchStudent("Zolotarev");
+        for(Student studentSearch: rezultSearchStudent) {
+            if(studentSearch==null)
+            {
+                System.out.println("There is no student with the specified surname in the grouper");
+            } else {
+                System.out.println(studentSearch.informationOutput());
+            }
+        }
     }
 }
